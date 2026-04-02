@@ -1,23 +1,23 @@
-// variável para armazenar o total
+// Armazena o total
 let total = 0;
 
-// seleciona todos os itens
+// Seleciona todos os itens
 const itens = document.querySelectorAll('.item');
 
-// função para calcular total (arrow function ✅)
+// Função para calcular total
 const calcularTotal = () => {
     total = 0;
 
     itens.forEach(item => {
         if (item.checked) {
-            total += parseFloat(item.value); // parseFloat ✅
+            total += parseFloat(item.value);
         }
     });
 
-    document.getElementById('total').innerText = total.toFixed(2);
+    document.getElementById('total').innerText = 
+    total.toLocaleString('pt-BR', { minimumFractionDigits: 2 });
 };
-
-// evento de clique ✅
+git 
 itens.forEach(item => {
     item.addEventListener('click', calcularTotal);
 });

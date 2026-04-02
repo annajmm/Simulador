@@ -1,18 +1,18 @@
-/* Fundo preto e texto branco */
+
 body {
   font-family: Arial, sans-serif;
-  background-color: black;
+  background-color:black;
   color: white;
   padding: 20px;
 }
 
-/* Centralizar o título */
+
 h1 {
   text-align: center;
   margin-bottom: 20px;
 }
 
-/* Estilo dos serviços */
+
 .servico {
   background-color: #1a1a1a;
   padding: 12px;
@@ -21,21 +21,31 @@ h1 {
   transition: 0.3s;
 }
 
-/* Hover (efeito ao passar o mouse) */
+
 .servico:hover {
   background-color: #333;
 }
 
-/* Remove o azul padrão ao clicar */
+
 input[type="checkbox"]:checked + label,
 .servico:has(input:checked) {
   background-color: #444;
-  accent-color: white; /* muda a cor do checkbox */
+  accent-color: white; 
   cursor: pointer;
 }
 
-/* Total */
+
 h2 {
   margin-top: 20px;
   text-align: center;
+    padding: 1rem auto;
+    background-color: rgb(5, 27, 80);
+    color: white;
 }
+
+header{
+    background-color: rgb(5, 27, 80);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}    
