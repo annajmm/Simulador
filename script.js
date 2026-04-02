@@ -17,7 +17,7 @@ const calcularTotal = () => {
     document.getElementById('total').innerText = 
     total.toLocaleString('pt-BR', { minimumFractionDigits: 2 });
 };
-git 
+
 itens.forEach(item => {
     item.addEventListener('click', calcularTotal);
 });
